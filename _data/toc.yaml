@@ -1,0 +1,83 @@
+toc:
+  # part 1
+  - section: Part &#x2160; Artificial Intelligence
+    chapters:
+      - name: 1. Introduction
+        url:  intro-exercises
+      - name:  2. Intelligent Agent
+        url:  agents-exercises
+
+  # part 2
+  - section:  Part &#x2161; Problem-solving
+    chapters:
+      - name: 3. Solving Problems By Searching
+        url:  search-exercises
+      - name:  4. Beyond Classical Search
+        url:  advanced-search-exercises
+      - name:  5. Adversarial Search
+        url:  game-playing-exercises
+      - name:  6. Constraint Satisfaction Problems
+        url:  csp-exercises
+  
+  # part 3
+  - section:  Part &#x2162; Knowledge, reasoning, and planning
+    chapters:
+      - name:   7. Logical Agents
+        url:  knowledge-logic-exercises
+      - name:   8. First Order Logic
+        url:  fol-exercises
+      - name:   9. Inference In First Order Logic
+        url:  logical-inference-exercises
+      - name:   10. Classical Planning
+        url:  planning-exercises
+      - name:   11. Planning And Acting In The Real World
+        url:  advanced-planning-exercises
+      - name:   12. Knowledge Representation
+        url:  kr-exercises
+
+  # part 4
+  - section:  Part &#x2163; Uncertain knowledge and reasoning
+    chapters:
+      - name:   13. Quantifying Uncertainity
+        url:  probability-exercises
+      - name:   14. Probabilistic Reasoning
+        url:  bayes-nets-exercises
+      - name:   15. Probabilistic Reasoning Over Time
+        url:  dbn-exercises
+      - name:   16. Making Simple Decisions
+        url:  decision-theory-exercises
+      - name:   17. Making Complex Decision
+        url:  complex-decisions-exercises
+
+  # part 5
+  - section:  Part &#x2164; Learning
+    chapters:
+      - name:   18. Learning From Examples
+        url:  concept-learning-exercises
+      - name:   19. Knowledge In Learning
+        url:  ilp-exercises
+      - name:   20. Learning Probabilistic Models
+        url:  bayesian-learning-exercises
+      - name:   21. Reinforcement Learning
+        url:  reinforcement-learning-exercises
+      
+  # part 6
+  - section:  Part &#x2165; Communicating, perceiving, and acting
+    chapters:
+      - name:   22. Natural Language Processing
+        url:  nlp-communicating-exercises
+      - name:   23. Natural Language For Communication
+        url:  nlp-english-exercises
+      - name:   24. Perception
+        url:  perception-exercises
+      - name:   25. Robotics
+        url:  robotics-exercises
+
+  # part 7
+  - section:  Part &#x2166; Conclusions
+    chapters:
+      - name:   26. Philosophical Foundations
+        url:  philosophy-exercises
+      - name:   Future Exercises
+        url:
+      

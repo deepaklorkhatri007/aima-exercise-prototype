@@ -1,0 +1,20 @@
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<div class="sidebar">
+    <img src="{{ site.baseurl }}/aima_logo.png" alt="aima logo" style="padding:1rem; margin: 0 auto;" class="brand">
+    <div id="accordion">
+    {% if site.data.toc.toc[0] %}
+        {% for book in site.data.toc.toc %}
+        <a class="text-light sidebar-nav-item" data-toggle="collapse" data-target="#nav{{forloop.index}}" aria-controls="nav{{forloop.index}}" aria-expanded="false" aria-label="Toggle navigation">{{ book.section }}</a>
+        <div class="collapse" id="nav{{forloop.index}}" data-parent="#accordion">
+                {% if book.chapters[0] %}
+                <ul>
+                    {% for chapter in book.chapters %}
+                    <li class="nav-item bg-light"><a class="nav-link" href="{{ site.baseurl }}/{{chapter.url}}">{{chapter.name}}</a></li>
+                    {% endfor %}
+                </ul>
+                {%endif%}
+        </div>
+        {%endfor%}
+    {%endif%}
+    </div>
+</div>

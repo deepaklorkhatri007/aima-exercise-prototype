@@ -1,0 +1,114 @@
+/* wrapper */
+.wrap {
+    position: relative;
+    width: 100%;
+}
+
+/* sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -18rem;
+    width: 18rem;
+    visibility: hidden;
+    overflow-y: auto;
+    border-radius: 0;
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    color: rgba(255,255,255,.5);
+    background-color: #202020;
+}
+
+/* transition stuff */
+.wrap,
+.sidebar,
+.sidebar-toggle {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.sidebar {
+  -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+.wrap,
+.sidebar-toggle {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+          transition: transform .3s ease-in-out;
+}
+
+/* when burger clicked (checked) */
+#sidebar-checkbox:checked + .sidebar {
+  visibility: visible;
+}
+#sidebar-checkbox:checked ~ .sidebar,
+#sidebar-checkbox:checked ~ .wrap,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  -webkit-transform: translate3d(18rem, 0, 0);
+          transform: translate3d(18rem, 0, 0);
+}
+
+/* sidebar nav */
+.sidebar-nav-item {
+    display: block;
+    padding: .5rem 1rem;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+.sidebar-nav-item.active,
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+    text-decoration: none;
+    background-color: rgba(255,255,255,.1);
+    border-color: transparent;
+}
+
+/* toggle burger stuffing */
+.sidebar-checkbox {
+    display: none;
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top:  1rem;
+    left: 1rem;
+    display: block;
+    width: 2.3rem;
+    padding: 0;
+    margin: 0;
+    color: #303030;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+label{
+    text-align: center;
+    font-size: 1.5rem;
+    -webkit-user-select: none;
+            user-select:none;
+}
+
+.sidebar-toggle:active,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  color: #fff;
+  background-color: #303030;
+}
+  
+/* image brand */
+.brand {
+    display: block;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+
+.sidebar a{
+    color: #777777;
+}
+
+/* nav */
+.nav-link:hover{
+    background-color: #101010;
+}
+
+ul{
+    margin-bottom: 0;
+}

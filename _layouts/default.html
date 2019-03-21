@@ -1,0 +1,32 @@
+{% include head.html%}
+<body>
+    {% include sidebar.html%}
+    <div class=" wrap">
+        <div class="masthead">
+            <div class="container">
+                <h3 class="masthead-title">
+                    <a href="/" title="Home">AIMA</a>
+                    <small>Artificial Intelligence a modern approch</small>
+                </h3> 
+            </div>
+        </div>
+        <div class="collapse" id="aimatagline">
+            <div class="p-4 container">
+                <h6 class="text-danger">AIMA-exercises is an open-source community of students, instructors and developers. Anyone can add an exercise, suggest answers to existing questions, or simply help us improve the platform. We accept contributions on <a href="https://github.com/aimacode/aima-exercises">this github repository</a>. </h6>
+            </div>
+        </div>
+        <nav class="navbar">
+                <hr class="drop" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#aimatagline" aria-controls="aimatagline" aria-expanded="false" aria-label="Toggle navigation">
+        </nav>
+        <div class="container">
+                
+                {{content}}
+        </div>
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle">&#9776;</label>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
