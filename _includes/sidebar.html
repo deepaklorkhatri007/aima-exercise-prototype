@@ -1,6 +1,6 @@
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 <div class="sidebar">
-    <img src="{{ site.baseurl }}/aima_logo.png" alt="aima logo" style="padding:1rem; margin: 0 auto;" class="brand">
+    <a href="{{ site.baseurl }}/" title="Home"><img src="{{ site.baseurl }}/aima_logo.png" alt="aima logo" style="padding:1rem; margin: 0 auto;" class="brand"></a>
     <div id="accordion">
     {% if site.data.toc.toc[0] %}
         {% for book in site.data.toc.toc %}
