@@ -1,11 +1,12 @@
 ---
 layout : default
 ---
-<h4>For Page reference, Chapter reference, Section reference we can use this type of tooltip OR maybe a popover</h4>
+<h4>1. For Page reference, Chapter reference, Section reference we can use this type of tooltip OR maybe a popover</h4>
 <a href="#" data-toggle="tooltip" title="pg. 27 | ch. 1">Artificial general Intelligence</a>
 <br>
+<hr>
 <br>
-<h4>For External figure reference we can use this type of modals</h4>
+<h4>2. For External figure reference we can use this type of modals</h4>
 <!-- Button trigger modal -->
 <a href="#" data-toggle="modal" data-target="#exampleModalCenter">
     Figure 3.5 Almost a solution to the 8 - Queens problem.
@@ -31,6 +32,39 @@ layout : default
             </div>
         </div>
     </div>
+
+<br>
+<hr>
+<br>
+<h4>3. Bookmark Demo</h4>
+<br>
+<div class="card">
+    <div class="card-header p-2">
+        <a href='#' class="p-2">Exercise 1</a>
+        <!-- <button type="button" class="btn btn-dark float-right" id="bookmark-button" onclick="bookmark();" href="#"><i id="bookmark" class="fas fa-bookmark text-right" style="color:white"></i></button> -->
+        <button type="button" class="btn btn-dark float-right" onclick="bookmark('ex1');" href="#"><i id="ex1" class="fas fa-bookmark" style="color:white"></i></button>
+    </div>
+    <div class="card-body">
+        <!-- <h5 class="card-title">Special title treatment</h5> -->
+        <p class="card-text">Define in your own words: (a) intelligence, (b) artificial intelligence, (c) agent, (d) rationality, (e) logical reasoning.</p>
+        <!-- <a href="#" class="btn btn-primary text-right">Go somewhere</a> -->
+    </div>
+    <!-- <div class="card-footer text-muted">
+        Answer Tab - Coming soon
+    </div> -->
+</div>
+
+
+<br>
+<div class="card">
+    <div class="card-header p-2">
+        <a href='#' class="p-2">Exercise 2</a>
+        <button type="button" class="btn btn-dark float-right" onclick="bookmark('ex2');" href="#"><i id="ex2" class="fas fa-bookmark" style="color:white"></i></button>
+    </div>
+    <div class="card-body">
+        <p class="card-text">Read Turing’s original paper on AI @Turing:1950. In the paper, he discusses several objections to his proposed enterprise and his test for intelligence. Which objections still carry weight? Are his refutations valid? Can you think of new objections arising from developments since he wrote the paper? In the paper, he predicts that, by the year 2000, a computer will have a 30% chance of passing a five-minute Turing Test with an unskilled interrogator. What chance do you think a computer would have today? In another 50 years?</p>
+    </div>
+</div>
 
 
 
